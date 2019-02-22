@@ -1,2 +1,5 @@
-<h1>Zoos#new</h1>
-<p>Find me in app/views/zoos/new.html.erb</p>
+<h1>New Zoo</h1>
+
+<%= render "form", zoo: @zoo %>
+
+<%= link_to "Back", zoos_path %>
