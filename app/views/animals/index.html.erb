@@ -1,2 +1,8 @@
-<h1>Animals#index</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+<h1>Click an Animal To View It</h1>
+<%= link_to 'Add Animal', new_zoo_animal_path(@zoo) %>
+<ul>
+  <% @animals.each do |animal| %>
+    <li><%= link_to animal.name, [@zoo, animal] %></li>
+  <% end %>
+</ul>
+

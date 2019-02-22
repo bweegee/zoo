@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'zoos#index'
 
-  resources :zoos
+  resources :zoos do
+    resources :animals
+  end
 end
